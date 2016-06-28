@@ -191,8 +191,6 @@
                 <div class="col-lg-12">
                     <h1>Transitions and Animation Section</h1>
                 </div>
-              </div>
-              <div class="row">
                 <div class="col-lg-6">
                     <div id="trans1"></div>
                 </div>
@@ -249,14 +247,12 @@
         height: 100px;
         border-radius: 5%;
         animation-name: t3;
-        animation-duration: 2s;
+        animation-duration: 4s;
         animation-iteration-count: infinite;
-        animation-direction: alternate;
       }
 
       @keyframes t3 {
-        from {background-color: green; width: 100px; height: 100px; border-radius: 5%;}
-        to {background-color: orange; width: 200px; height: 200px; border-radius: 50%}
+        50% {background-color: orange; width: 200px; height: 200px; border-radius: 50%}
       }
     </style>
 
