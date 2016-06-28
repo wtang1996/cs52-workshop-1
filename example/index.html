@@ -47,7 +47,10 @@
                         <a class="page-scroll" href="#media-queries">Media Queries</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#glyphicons">Glyphicons</a>
+                        <a class="page-scroll" href="#glyphicons">Glyphicons <span class="glyphicon glyphicon-star"></span></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#custom">Your Own</a>
                     </li>
                 </ul>
             </div>
@@ -72,11 +75,70 @@
     <!-- Grids Section -->
     <section id="grids" class="grid-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Grid Section</h1>
-                </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1>Grid Section</h1>
+              </div>
+          </div>
+          <!-- Using a row format and columns broken into fourths to create
+              a grid of thumbnails and text-->
+          <div class="row">
+
+              <!-- Image of a puppy -->
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#">
+                      <img class="img-responsive" src="https://stiney98.files.wordpress.com/2011/05/cute-welsh-corgi-puppy-400x300.jpg?w=400" alt="">
+                  </a>
+              </div>
+              <!-- Image of a puppy -->
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#">
+                      <img class="img-responsive" src="http://animalfair.com/wp-content/uploads/2015/01/puppybowl600x450-400x300.jpg" alt="">
+                  </a>
+              </div>
+              <!-- Image of a puppy -->
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#">
+                      <img class="img-responsive" src="http://animalfair.com/wp-content/uploads/2013/09/macexplorer.com-puppy-dog-26-400x300.jpg" alt="">
+                  </a>
+              </div>
+              <!-- three fourths puppies, one fourth text -->
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <h4 align="left"> In this section, we find some text, then some cute lil' puppies.
+                  These puppies are pretty darn cute. I mean, one even is playing football.
+                  That makes little to no sense. How whimsical. Also they're pretty darn well organized,
+                thanks to the bootstrap grid system. </h4>
+              </div>
+          </div>
+
+          <!-- New section for the second row -->
+          <div class="row">
+            <!-- One half text, one half puppies -->
+            <div class="col-lg-6 col-md-8 col-xs-12 thumb">
+                <h4 align="left"> In this section, we find some cute lil' puppies, then some text.
+                These puppies might even be cuter than the puppies above, really depends
+                on your taste in pupper. I personally have a generally varied taste in puppers.
+                Each type has its own virtues and in the end, I still have no idea why you would be
+                reading any of this. I am just trying to make this look a lot better with quite a bit
+                more text in this section. How do you feel about this? How about the Giants? How about
+                the tragic loss of Argentina in Copa America? I was actually devastated. At least
+                I was, until I saw these organized puppies.
+                Thankfully, they are all so well organized thanks to bootstrap's grid system. Sweet!</h4>
             </div>
+            <!-- Image of a puppy -->
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDV8vDRkvdxvkcYs9V90zQ1QBGTzsgqb4Ju2YUSetjYQm6Qn3J" alt="">
+                </a>
+            </div>
+            <!-- Image of a puppy -->
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuD0wUNDtcQldPnqJ2MJGNY3BvIKI83NHPnxy9WFwAxUNhyqLilA" alt="">
+                </a>
+            </div>
+        </div>
+
         </div>
     </section>
 
@@ -85,9 +147,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Buttons Section</h1>
+                    <h1>Fun with Buttons!</h1>
+                    <br>
+
+                    <button type="button" class="btn btn-primary"> A Primary Button</button>
+                    <button type="button" class="btn btn-secondary btn-lg">A Secondary Button</button>
+                    <button type="button" class="btn btn-success">A Success Button</button>
+                    <button type="button" class="btn btn-info btn-sm">An Info Button</button>
+                    <button type="button" class="btn btn-warning disabled">A Warning Button</button>
                 </div>
             </div>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="button" class="btn btn-danger btn-block">DANGER!!!</button>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
@@ -96,18 +174,98 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Transitions Section</h1>
+                    <h1>Transitions and Animation Section</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                    <div id="trans1"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="trans2"></div>
+                </div>
+                <div class="col-lg-12">
+                    <div id="trans3"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Style for Transitions Section -->
+    <style>
+      #trans1 {
+        background-color: red;
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+        border-radius: 5%;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+      }
+
+      #trans1:hover {
+        background-color: black;
+        height: 200px;
+        width: 200px;
+      }
+
+      #trans2 {
+        background-color: blue;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 5%;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+      }
+
+      #trans2:hover {
+        transform: rotate(720deg);
+        height: 200px;
+        width: 200px;
+      }
+
+      #trans3 {
+        background-color: green;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 5%;
+        animation-name: t3;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes t3 {
+        from {background-color: green; width: 100px; height: 100px; border-radius: 5%;}
+        to {background-color: orange; width: 200px; height: 200px; border-radius: 50%}
+      }
+    </style>
 
     <!-- Media Queries Section -->
     <section id="media-queries" class="media-queries-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <!-- NOTE: Bootstrap has a grid and media queries built in, but we have reproduced the functionality below so you can see how it works. You can use bootstraps built in grid system by using the appropriate bootstrap classes on your divs. Try it for extra practice!-->
                     <h1>Media Queries Section</h1>
+                    <div class="row">
+                        <div class="col-lg-4">
+                        <h1>Lorem Ipsum 1</h1>
+                        <p>Dolor sit amet blah blah blah.</p>
+                        </div>
+                        <div class="col-lg-4">
+                        <h1>Lorem Ipsum 2</h1>
+                        <p>Dolor sit amet blah blah blah.</p>
+                        </div>
+                        <div class="col-lg-4">
+                        <h1>Lorem Ipsum 3</h1>
+                        <p>Dolor sit amet blah blah blah.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,6 +277,40 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Glyphicons Section</h1>
+                    <!-- a plain glyphicon -->
+                    <p>House icon: <span class="glyphicon glyphicon-home"></span></p>
+                    <!-- glyphicon as a link -->
+                    <p>Download link:
+                      <a href="#">
+                        <span class="glyphicon glyphicon-download"></span>
+                      </a>
+                    </p>
+                    <!-- glyphicons as buttons -->
+                    <p>Pause button:
+                      <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-pause"></span>
+                      </button>
+                      Play button:
+                        <button type="button" class="btn btn-default btn-sm">
+                          <span class="glyphicon glyphicon-play"></span>
+                        </button>
+                    </p>
+                    <!-- glyphicons with transition -->
+                    <p>"Beating" heart (hover):
+                      <span class ="glyphicon glyphicon-heart"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Section -->
+    <section id="custom" class="custom-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Custom Section
+                        <iframe src="https://alexbeals.com/projects/sky-animation/" width="80%" height="600"></iframe>
                 </div>
             </div>
         </div>
