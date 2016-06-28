@@ -84,3 +84,12 @@ of those sections to manage the look and feel of the site. */
     border: none;
 
 }
+
+.glyphicon {
+    font-size: 200%;
+    color: red;
+}
+
+.glyphicon.glyphicon-star{
+    font-size: 100%;
+}
