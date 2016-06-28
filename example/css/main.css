@@ -33,42 +33,54 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #fff;
 }
 
 .grid-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
 .buttons-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
 .transitions-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
 .media-queries-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
 .glyphicons-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 60px;
     text-align: center;
     background: #eee;
+}
+
+.custom-section {
+    height: 100%;
+    padding-top: 60px;
+    text-align: center;
+    background: #fff;
+}
+
+.custom-section iframe {
+    border: none;
+
 }
