@@ -38,21 +38,35 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-.about-section {
+.grid-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #eee;
 }
 
-.services-section {
+.buttons-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
 }
 
-.contact-section {
+.transitions-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.media-queries-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.glyphicons-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
