@@ -9,11 +9,31 @@
 
 ###Section 3: Transitions and Animations
 
-In this tutorial, we’ll make one transition and one animation (the sample solution has more, and you can make more if you like). To start, we have to set up the grid. Remember that Bootstrap has 12 “boxes” to divide up per column; so, let’s make 2 6-box columns by adding 2 divisions with the tag `<div class = “col-lg-6”>`.
+In this tutorial, we’ll make one transition and one animation (the sample solution has more, and you can make more if you like). The grid is already set up in `index.html`; take a look at the `<!-- Transitions and Animations -->` section of `index.html` to see the setup.
 
-Once you have the 2 divs, add another div inside each of these divs and give each a unique ID. One div will become a transition, and one will become an animation. To make the transition and the animation, you’ll have to use CSS. For the purpose of this tutorial, the easiest way to go about this is to use an internal style sheet. I placed mine directly after the transition/animation section in my HTML document, but you can place it wherever you like. Use the tag `<style>` to make an internal style sheet.
+The first `<div>` in this section will be a transition. Now open `css/main.css` and find the section that looks like this: 
 
-Let’s make the first div a transition; let’s say you decided to give this div the ID `transition`. So you need to make a selector `#transition {}`. In the selector, you say what you want the “normal” state of the object to be, and you need to give it values for `transition-property` (the easiest value is “all”), `transition-duration`, and (optionally) `transition-timing-function` (some fun ones are ease-in, ease-out, and ease-in-out). Make it whatever you want; some attributes to consider are width, height, color, and border-radius. If you want your div centered, use the line `margin: 0 auto;`.
+```html
+/******** transition/animation style section ********/
+
+#transition {
+  /* put style here */
+}
+
+#transition:hover {
+  /* what do you want the transition to do? */
+}
+
+#animation {
+  /* put "initial" style of animation here */
+}
+
+/* now, need to add in a keyframes rule */
+
+/*************************************************/
+```
+
+Since the ID of the first `<div>` is `transition`, you'll be working on the first 2 selectors first. The selector `#transition` will specify the "normal" state of the object (size, color, etc.). You'll need to give it values for `transition-property` (the easiest value is “all”), `transition-duration`, and (optionally) `transition-timing-function` (some fun ones are ease-in, ease-out, and ease-in-out). If you want your div centered, use the line `margin: 0 auto;`.
 
 Now you need to write the selector `#div:hover`. Whatever you put in here will be the state of the object when you hover your mouse over it. The transition between the “normal” and “hovering” state of the object will occur in the time period specified by `transition-duration`, and with the timing specified by `transition-timing-function`. Again, make this whatever you want. Some cool things you can do are change the color of the object, make it grow, and make it rotate or skew using transform.
 
@@ -49,9 +69,9 @@ Using percents (this does something different):
 ```
 **Animation duration and repetition**
 
-Add the field animation-iteration-count if you want your animation to repeat itself; infinite is an option. Other fields you can add are animation-direction and animation-delay. animation-direction specifies which direction you want the animation to run in (reverse, alternate, etc.), and animation-delay specifies an amount of time you want to wait before starting the animation.
+Add the field `animation-iteration-count` if you want your animation to repeat itself; `infinite` is an option. Other fields you can add are `animation-direction` and `animation-delay`. `animation-direction` specifies which direction you want the animation to run in (reverse, alternate, etc.), and `animation-delay` specifies an amount of time you want to wait before starting the animation.
 
-Note: guidance taken from [w3schools](http://www.w3schools.com/cssref/) CSS and CSS3 tutorials: 
+Note: guidance taken from [w3schools](http://www.w3schools.com/cssref/) CSS and CSS3 tutorials. 
 
 ###Section 4: Media Queries
 
