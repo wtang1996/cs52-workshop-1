@@ -96,7 +96,9 @@ Uh oh! That’s a bit too big to be in the nav bar. To fix this, we want to chan
 
 Finally, let’s combine glyphicons with css transitions to make a “beating” heart. Find the heart icon, add it to your page. Use css transitions to have it gradually grow to a larger size when the cursor hovers over it, and then gradually back to its original size when the cursor moves off of it. 
 
-Your end product should look similar to: ![alt text](glyphicons_section.png)
+Your end product should look similar to: 
+
+![alt text](glyphicons.png)
 
 Perfect! You have now experienced how easy it is to spice up bootstrap pages with glyphicons. 
 
