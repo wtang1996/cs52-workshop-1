@@ -2,9 +2,47 @@
 ##CS52 16X
 ###Presenters: Jessie Anderson, Manmeet Gujral, Alex Beals, Jean Zhou, Emma Oberstein, Rob Sayegh
 ###Date: June 30, 2016
-
+---
 ###Section 1: Bootstrap grid
+Now that you understand the grid system and its purpose, let’s implement it to create a grid of images and/or text.
 
+To begin, let’s create a create a container for our grid with the following code:
+
+	<div class="container">
+	</div>
+
+Our container will hold all the rows and columns for our grid, so let’s create a row nested within our container, with the following line of code:
+
+	<div class="row">
+	</div>
+
+So now we have a row to work with within our container, so let’s create a column that contains an image of a nice little puppy, like this:
+
+	<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		<a class="thumbnail" href="#">
+			<img class="img-responsive" src="https://stiney98.files.wordpress.com/2011/05/cute-welsh-corgi-puppy-400x300.jpg?w=400" alt="">
+		</a>
+	</div>
+
+Some things to note about the above code:
+The line 
+	
+	<div class="col-lg-3 col-md-4 col-xs-6 thumb>
+
+
+creates a column that takes up 3 blocks on a large screen, 4 blocks on a medium screen, and 6 blocks on a small screen. As you know, the bootstrap grid is made up of 12 total blocks, so this line determines what fraction of the screen you are working with.
+The code following that is to use an image that links to nothing, you can simply copy that format if you would like to use images from the web!
+ 
+__NOTE:__ 
+
+	“href="#"” 
+means that clicking your images links to nothing. Try and focus on the grid!
+
+Now that you know how to create a container, row, and column, try and add three extra rows of a varied number of columns to create a grid of images and text that demonstrates the power of the bootstrap grid for clean web design.
+
+Check out this page for some more specific info on the nuances of the bootstrap grid: http://getbootstrap.com/css/#grid
+
+---
 ###Section 2: Buttons
 
 Let’s add in some buttons. To begin, let’s add in the following code:
@@ -57,7 +95,7 @@ Let’s add in an example in the next row of what a dropdown button menu could l
     </ul>
   </div>
 ```
-
+---
 ###Section 3: Transitions and Animations
 
 In this tutorial, we’ll make one transition and one animation (the sample solution has more, and you can make more if you like). The grid is already set up in `index.html`; take a look at the `<!-- Transitions and Animations -->` section of `index.html` to see the setup.
@@ -124,8 +162,10 @@ Add the field `animation-iteration-count` if you want your animation to repeat i
 
 Note: guidance taken from [w3schools](http://www.w3schools.com/cssref/) CSS and CSS3 tutorials. 
 
+---
 ###Section 4: Media Queries
 
+---
 ###Section 5: Glyphicons
 
 Bootstrap comes with over 250 [glyphicons](http://glyphicons.com/). These are monochromatic icons and symbols intended for simplicity and ease of use. They are easily incorporated into text, buttons, forms, etc.
@@ -155,6 +195,7 @@ Perfect! You have now experienced how easy it is to spice up bootstrap pages wit
 
 Glyphicons are just one of many additional components and cool features that bootstrap implements for ease of use. Check out the rest of [http://getbootstrap.com/components/](ttp://getbootstrap.com/components/) to see what else is available.
 
+---
 ###Section 6: Adding your own section
 
 Bootstrap makes it easy to create navbars.  There's already a navbar set up, but let's create a new section to the navbar, after the Input Section.
