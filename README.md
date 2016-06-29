@@ -95,6 +95,7 @@ Let’s add in an example in the next row of what a dropdown button menu could l
     </ul>
   </div>
 ```
+Customize it to make it your own!
 ---
 ###Section 3: Transitions and Animations
 
