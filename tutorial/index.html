@@ -192,37 +192,77 @@
         </div>
     </section>
 
+    <!-- Style for Transitions Section -->
+    <style>
+      #trans1 {
+        background-color: red;
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+        border-radius: 5%;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+      }
+
+      #trans1:hover {
+        background-color: black;
+        height: 200px;
+        width: 200px;
+      }
+
+      #trans2 {
+        background-color: blue;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 5%;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+      }
+
+      #trans2:hover {
+        transform: rotate(720deg);
+        height: 200px;
+        width: 200px;
+      }
+
+      #trans3 {
+        background-color: green;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 5%;
+        animation-name: t3;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes t3 {
+        50% {background-color: orange; width: 200px; height: 200px; border-radius: 50%}
+      }
+    </style>
+
     <!-- Media Queries Section -->
     <section id="media-queries" class="media-queries-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12" id="mq">
+                <div class="col-lg-12">
                     <!-- NOTE: Bootstrap has a grid and media queries built in, but we have reproduced the functionality below so you can see how it works. You can use bootstraps built in grid system by using the appropriate bootstrap classes on your divs. Try it for extra practice!-->
                     <h1>Media Queries Section</h1>
                     <div class="row">
-                        <style>
-                        @media only screen and (max-width: 500px) {
-                            #mq {
-                                background-color: lightblue;
-                            }
-                        }
-                        @media only screen and (orientation: landscape) {
-                            #mq {
-                                font-color: darkgreen !important;
-                            }
-                        }
-                        </style>
                         <div class="col-lg-4">
-                          <h1>Lorem Ipsum 1</h1>
-                          <p>Dolor sit amet blah blah blah.</p>
+                        <h1>Lorem Ipsum 1</h1>
+                        <p>Dolor sit amet blah blah blah.</p>
                         </div>
                         <div class="col-lg-4">
-                          <h1>Lorem Ipsum 2</h1>
-                          <p>Dolor sit amet blah blah blah.</p>
+                        <h1>Lorem Ipsum 2</h1>
+                        <p>Dolor sit amet blah blah blah.</p>
                         </div>
                         <div class="col-lg-4">
-                          <h1>Lorem Ipsum 3</h1>
-                          <p>Dolor sit amet blah blah blah.</p>
+                        <h1>Lorem Ipsum 3</h1>
+                        <p>Dolor sit amet blah blah blah.</p>
                         </div>
                     </div>
                 </div>
