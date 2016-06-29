@@ -33,7 +33,7 @@ The first `<div>` in this section will be a transition. Now open `css/main.css` 
 /*************************************************/
 ```
 
-Since the ID of the first `<div>` is `transition`, you'll be working on the first 2 selectors first. The selector `#transition` will specify the "normal" state of the object (size, color, etc.). You'll need to give it values for `transition-property` (the easiest value is “all”), `transition-duration`, and (optionally) `transition-timing-function` (some fun ones are ease-in, ease-out, and ease-in-out). If you want your div centered, use the line `margin: 0 auto;`.
+Since the ID of the first `<div>` is `transition`, you'll be working on the first 2 selectors first. The selector `#transition` will specify the "normal" state of the object (size, color, etc.). You'll need to give it values for `transition-property` (the easiest value is “all”), `transition-duration`, and (optionally) `transition-timing-function` (some fun ones are `ease-in`, `ease-out`, and `ease-in-out`). If you want your div centered, use the line `margin: 0 auto;`.
 
 Now you need to write the selector `#div:hover`. Whatever you put in here will be the state of the object when you hover your mouse over it. The transition between the “normal” and “hovering” state of the object will occur in the time period specified by `transition-duration`, and with the timing specified by `transition-timing-function`. Again, make this whatever you want. Some cool things you can do are change the color of the object, make it grow, and make it rotate or skew using transform.
 
