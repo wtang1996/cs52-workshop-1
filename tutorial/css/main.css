@@ -108,9 +108,12 @@ of those sections to manage the look and feel of the site. */
 
 #animation {
   /* put "initial" style of animation here */
+  animation-name: keyanimate;
 }
 
-/* now, need to add in a keyframes rule */
+@keyframes keyanimate {
+  /* What do you want your animation to do? */
+}
 
 /*************************************************/
 

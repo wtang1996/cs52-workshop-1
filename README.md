@@ -96,6 +96,7 @@ Let’s add in an example in the next row of what a dropdown button menu could l
   </div>
 ```
 Customize it to make it your own!
+
 ---
 ###Section 3: Transitions and Animations
 
@@ -116,20 +117,23 @@ The first `<div>` in this section will be a transition. Now open `css/main.css` 
 
 #animation {
   /* put "initial" style of animation here */
+  animation-name: keyanimate;
 }
 
-/* now, need to add in a keyframes rule */
+@keyframes keyanimate {
+  /* What do you want your animation to do? */
+}
 
 /*************************************************/
 ```
 
-Since the ID of the first `<div>` is `transition`, you'll be working on the first 2 selectors first. The selector `#transition` will specify the "normal" state of the object (size, color, etc.). You'll need to give it values for `transition-property` (the easiest value is “all”), `transition-duration`, and (optionally) `transition-timing-function` (some fun ones are `ease-in`, `ease-out`, and `ease-in-out`). If you want your div centered, use the line `margin: 0 auto;`.
+Since the ID of the first `<div>` is `transition`, you'll be working on the first 2 selectors first. The selector `#transition` will specify the "normal" state of the object (size, color, etc.). You'll need to give it values for `transition-property` (the easiest value is “all”), `transition-duration` (i.e. `1s`, `2s`, etc.) , and (optionally) `transition-timing-function` (some fun ones are `ease-in`, `ease-out`, and `ease-in-out`). If you want your div centered, use the line `margin: 0 auto;`.
 
 Now you need to write the selector `#div:hover`. Whatever you put in here will be the state of the object when you hover your mouse over it. The transition between the “normal” and “hovering” state of the object will occur in the time period specified by `transition-duration`, and with the timing specified by `transition-timing-function`. Again, make this whatever you want. Some cool things you can do are change the color of the object, make it grow, and make it rotate or skew using transform.
 
-Now let’s make an animation using the second div. Animations are different from transitions because they happen without the user performing any action with the mouse. Let’s say you gave your second div the ID `animation`. Like with the transition, specify the “initial” state of the object with the selector `#animation {}` (color, size, etc.).
+Now let’s make an animation using the second div. Animations are different from transitions because they happen without the user performing any action with the mouse. Use the third selector, `#animation`, to specify the initial state of the object (as with transitions).
 
-Now, you need to add at least 2 values to the selector: `animation-name` and `animation-duration`. `animation-name` specifies the name of the animation you want the object to undergo, and `animation-duration` says how long you want the animation to take. 
+Now, you need to add at least 2 values to the selector: `animation-name` and `animation-duration`. `animation-name` has already been chosen for you, and a keyframes rule `@keyanimate` is set up for you to fill in. `animation-duration` is the length of the animation (i.e. `1s`, `2s`, etc.).
 
 **Keyframes rule**
 
@@ -141,7 +145,7 @@ The animation is specified using the `keyframes` rule. This is basically another
 	to{background-color:green}
 }
 ```
-Or, if the background-color specified in #animation{} is blue, then the following would accomplish the same thing:
+Or, if the background-color specified in `#animation{}` is blue, then the following would accomplish the same thing:
 
 ```css
 @keyframes colorchange {
@@ -154,7 +158,7 @@ Using percents (this does something different):
 @keyframes colorchange {
 	0% {background-color:blue}
 	50% {background-color:purple}
-	100: {background-color:green}
+	100%: {background-color:green}
 }
 ```
 **Animation duration and repetition**
@@ -194,7 +198,7 @@ Your end product should look similar to:
 
 Perfect! You have now experienced how easy it is to spice up bootstrap pages with glyphicons. 
 
-Glyphicons are just one of many additional components and cool features that bootstrap implements for ease of use. Check out the rest of [http://getbootstrap.com/components/](ttp://getbootstrap.com/components/) to see what else is available.
+Glyphicons are just one of many additional components and cool features that bootstrap implements for ease of use. Check out the rest of [http://getbootstrap.com/components/](http://getbootstrap.com/components/) to see what else is available.
 
 ---
 ###Section 6: Adding your own section
