@@ -3,6 +3,21 @@
 ###Presenters: Jessie Anderson, Manmeet Gujral, Alex Beals, Jean Zhou, Emma Oberstein, Rob Sayegh
 ###Date: June 30, 2016
 ---
+###Setup
+
+To set up for the tutorial, fork this repository by clicking the "fork" button in the upper right corner of the page:
+
+![alt text](fork_button.png)
+
+Now, you have a copy of your repository in your own github account.
+
+Switch to the `gh-pages` branch so that you will be able to see your page update as you complete the tutorial. Clone the repository in the command line and make sure you are on the `gh-pages` branch (run the command `git branch` to see what branch you're on, and if you're not on `gh-pages`, run `git checkout gh-pages`).
+
+Note the directory structure: you'll be working with the files in `tutorial/`. Our example code is in the directory `example/`.
+
+Now you're ready to start modifying files!
+
+---
 ###Section 1: Bootstrap grid
 Now that you understand the grid system and its purpose, let’s implement it to create a grid of images and/or text.
 
