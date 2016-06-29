@@ -7,6 +7,57 @@
 
 ###Section 2: Buttons
 
+Let’s add in some buttons. To begin, let’s add in the following code:
+ 
+```html
+<button type="button" class="btn"> A Primary Button</button>
+```
+
+This is a primary button. In Bootstrap, there are six predefined styles: primary, secondary, success, info, warning, danger and link. To add in these styles, simply add the class ``btn-<style>`` (i.e. btn-info). 
+
+So let’s make our original button a primary button.
+
+We can also change the size of our buttons by adding in the classes btn-lg or btn-sm. 
+
+Let’s add in a large secondary button, a regular success button and a small info button. 
+
+We can disable our buttons by adding in the disabled property.  
+
+Let’s add in a disabled warning button.
+
+In a new row, let’s add in a danger button with the class btn-block. This will ensure the button spans the entire width of its parent element.
+
+Bootstrap also allows us to group our buttons together using button groups. Let’s add in a basic example:
+
+```html
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
+```
+
+We can change the size of the group by adding in the class btn-group-<size>.
+We can use a button toolbar to group together multiple button groups.
+
+Let’s try changing the group size or creating a button toolbar.
+
+Bootstrap also allows us to easily add in button dropdown menus via nesting. 
+Let’s add in an example in the next row of what a dropdown button menu could look like:
+
+```html
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+```
+
 ###Section 3: Transitions and Animations
 
 In this tutorial, we’ll make one transition and one animation (the sample solution has more, and you can make more if you like). The grid is already set up in `index.html`; take a look at the `<!-- Transitions and Animations -->` section of `index.html` to see the setup.
