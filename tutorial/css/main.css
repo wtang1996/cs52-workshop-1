@@ -46,50 +46,38 @@ of those sections to manage the look and feel of the site. */
 }
 
 .buttons-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
 .transitions-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
 .media-queries-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
 .glyphicons-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
 .input-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
-}
-
-.custom-section {
-    height: 100%;
-    padding-top: 60px;
-    text-align: center;
-    background: #eee;
-}
-
-.custom-section iframe {
-    border: none;
-
 }
 
 /******** glyphicon style section ********/
@@ -125,3 +113,11 @@ of those sections to manage the look and feel of the site. */
 /* now, need to add in a keyframes rule */
 
 /*************************************************/
+
+/*========== CUSTOM SECTION START ==============*/
+
+/* Add in your custom section styling like the others */
+
+/* Add in additional styling for any elements you include */
+
+/*========== CUSTOM SECTION START ==============*/

@@ -49,41 +49,42 @@ of those sections to manage the look and feel of the site. */
 }
 
 .buttons-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
 .transitions-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
 .media-queries-section {
+    min-height: 100%;
     padding: 60px 0 60px 0;
     text-align: center;
     background: #fff;
 }
 
 .glyphicons-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
 .input-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
 .custom-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #eee;
@@ -91,7 +92,6 @@ of those sections to manage the look and feel of the site. */
 
 .custom-section iframe {
     border: none;
-
 }
 
 .glyphicon {
