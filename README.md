@@ -55,7 +55,7 @@ This is a primary button. In Bootstrap, there are six predefined styles: primary
 
 So let’s make our original button a primary button.
 
-We can also change the size of our buttons by adding in the classes btn-lg or btn-sm. 
+We can also change the size of our buttons by adding in the classes ``btn-lg`` or ``btn-sm``. 
 
 Let’s add in a large secondary button, a regular success button and a small info button. 
 
@@ -75,7 +75,7 @@ Bootstrap also allows us to group our buttons together using button groups. Let�
 </div>
 ```
 
-We can change the size of the group by adding in the class btn-group-<size>.
+We can change the size of the group by adding in the class ``btn-group-<size>``.
 We can use a button toolbar to group together multiple button groups.
 
 Let’s try changing the group size or creating a button toolbar.
