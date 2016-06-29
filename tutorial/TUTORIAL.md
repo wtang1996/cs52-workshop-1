@@ -13,7 +13,7 @@ In this tutorial, we’ll make one transition and one animation (the sample solu
 
 The first `<div>` in this section will be a transition. Now open `css/main.css` and find the section that looks like this: 
 
-```html
+```css
 /******** transition/animation style section ********/
 
 #transition {
@@ -45,7 +45,7 @@ Now, you need to add at least 2 values to the selector: `animation-name` and `an
 
 The animation is specified using the `keyframes` rule. This is basically another selector with the syntax `@keyframes animation-name {keyframes-selector {css styles}}`. The `keyframes-selector` can either be a percentage 0-100% (what you want the animation to look like at a certain moment in the animation) or the keywords `from` and `to`. Here are two examples using each of these possibilities (with `animation-name: colorchange;`):
 
-```html
+```css
 @keyframes colorchange {
 	from{background-color:blue}
 	to{background-color:green}
@@ -53,14 +53,14 @@ The animation is specified using the `keyframes` rule. This is basically another
 ```
 Or, if the background-color specified in #animation{} is blue, then the following would accomplish the same thing:
 
-```html
+```css
 @keyframes colorchange {
 	to{background-color:green}
 }
 ```
 Using percents (this does something different):
 
-```html
+```css
 @keyframes colorchange {
 	0% {background-color:blue}
 	50% {background-color:purple}
