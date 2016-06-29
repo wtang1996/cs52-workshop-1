@@ -104,4 +104,27 @@ Perfect! You have now experienced how easy it is to spice up bootstrap pages wit
 
 Glyphicons are just one of many additional components and cool features that bootstrap implements for ease of use. Check out the rest of [http://getbootstrap.com/components/](ttp://getbootstrap.com/components/) to see what else is available.
 
-###Section 6: iFrames
+###Section 6: Adding your own section
+
+Bootstrap makes it easy to create navbars.  There's already a navbar set up, but let's create a new section to the navbar, after the Input Section.
+
+The first thing to do is add in a list element to the navbar.
+
+```html
+<li>
+    <a class="page-scroll" href="#custom">Your Own</a>
+</li>
+```
+
+The ‘page-scroll’ class is for use with ‘scrollspy’, the Bootstrap plugin that allows the navbar to change the highlighting as you scroll.  The ‘href’ tag is a link to a section with an id of ‘custom’.  However, that section doesn’t exist yet, so while the section will show up in the navbar, clicking on it won’t do anything.  So let’s add in the section!
+
+```html
+<section id="custom" class="custom-section">
+    <h1>Custom Section</h1>
+    <!-- Whatever you want! -->
+</section>
+```
+
+This section has an id of ‘custom’, matching the link so that the link will actually function, and has a class ‘custom-section’, which can be separately styled in ‘main.css’.  To match, add a section with a min-height of 100%, a top padding of 60px, centrally aligned text, and a background color of either #fff or #eee depending on where you’re inserting the section.
+
+Now it will work!  Feel free to add custom styles to your section, and add whatever you want from the previous sections into this one.
