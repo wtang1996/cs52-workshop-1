@@ -26,6 +26,9 @@ html {
         padding: 0;
     }
 }
+form {
+    text-align: left;
+}
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
@@ -46,42 +49,49 @@ of those sections to manage the look and feel of the site. */
 }
 
 .buttons-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
 .transitions-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
 .media-queries-section {
+    min-height: 100%;
     padding: 60px 0 60px 0;
     text-align: center;
     background: #fff;
 }
 
 .glyphicons-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
-.custom-section {
-    height: 100%;
+.input-section {
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
+.custom-section {
+    min-height: 100%;
+    padding-top: 60px;
+    text-align: center;
+    background: #eee;
+}
+
 .custom-section iframe {
     border: none;
-
 }
 
 .glyphicon {
@@ -101,6 +111,10 @@ of those sections to manage the look and feel of the site. */
 
 .glyphicon.glyphicon-heart:hover{
     font-size: 300%;
+}
+
+.glyphicon.glyphicon-search{
+    font-size: 100%;
 }
 
 #trans1 {

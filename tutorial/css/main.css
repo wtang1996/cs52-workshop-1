@@ -46,63 +46,55 @@ of those sections to manage the look and feel of the site. */
 }
 
 .buttons-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
 .transitions-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
 .media-queries-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
 .glyphicons-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #eee;
 }
 
-.custom-section {
-    height: 100%;
+.input-section {
+    min-height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
 }
 
-.custom-section iframe {
-    border: none;
-
-}
+/******** glyphicon style section ********/
 
 .glyphicon {
-    font-size: 200%;
-    color: red;
+    /* change the size and color of glyphicons here */
 }
 
-.glyphicon.glyphicon-star{
-    font-size: 100%;
-}
+/* change the size of the star glyphicon */
 
-.glyphicon.glyphicon-heart{
-    font-size: 100%;
-    -webkit-transition: font-size 2s;
-    transition: font-size 2s;
-}
+/* add hover transition for the herat glyphicon */
 
-.glyphicon.glyphicon-heart:hover{
-    font-size: 300%;
-}
+
+/******** input group style section ********/
+
+/* change the size of the search glyphicon */
+
 
 /******** transition/animation style section ********/
 
@@ -121,3 +113,11 @@ of those sections to manage the look and feel of the site. */
 /* now, need to add in a keyframes rule */
 
 /*************************************************/
+
+/*========== CUSTOM SECTION START ==============*/
+
+/* Add in your custom section styling like the others */
+
+/* Add in additional styling for any elements you include */
+
+/*========== CUSTOM SECTION START ==============*/
