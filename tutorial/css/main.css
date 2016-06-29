@@ -73,11 +73,18 @@ of those sections to manage the look and feel of the site. */
     background: #eee;
 }
 
-.custom-section {
+.input-section {
     height: 100%;
     padding-top: 60px;
     text-align: center;
     background: #fff;
+}
+
+.custom-section {
+    height: 100%;
+    padding-top: 60px;
+    text-align: center;
+    background: #eee;
 }
 
 .custom-section iframe {
@@ -85,24 +92,19 @@ of those sections to manage the look and feel of the site. */
 
 }
 
+/******** glyphicon style section ********/
+
 .glyphicon {
-    font-size: 200%;
-    color: red;
+    /* change the size and color of glyphicons here */
 }
 
-.glyphicon.glyphicon-star{
-    font-size: 100%;
-}
+/* change the size of the star glyphicon */
 
-.glyphicon.glyphicon-heart{
-    font-size: 100%;
-    -webkit-transition: font-size 2s;
-    transition: font-size 2s;
-}
+/* add hover transition for the herat glyphicon */
 
-.glyphicon.glyphicon-heart:hover{
-    font-size: 300%;
-}
+/******** input group style section ********/
+
+/* change the size of the search glyphicon */
 
 /******** transition/animation style section ********/
 
