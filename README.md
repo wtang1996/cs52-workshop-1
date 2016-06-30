@@ -13,7 +13,7 @@ Now, you have a copy of your repository in your own github account.
 
 Switch to the `gh-pages` branch so that you will be able to see your page update as you complete the tutorial. Clone the repository in the command line and make sure you are on the `gh-pages` branch (run the command `git branch` to see what branch you're on, and if you're not on `gh-pages`, run `git checkout gh-pages`).
 
-Note the directory structure: you'll be working with the files in `tutorial/`, which contains a template `index.html` and `main.css` for you to modify where we have marked with comments. Our example code is in the directory `example/`, which is a possible end product to this tutorial. 
+Note the directory structure: you'll be working with the files in `tutorial/`, which contains a template `index.html` and `css/main.css` for you to modify where we have marked with comments. Our example code is in the directory `example/`, which is a possible end product to this tutorial. 
 
 Now you're ready to start modifying files!
 
