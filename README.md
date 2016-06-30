@@ -23,34 +23,37 @@ Now that you understand the grid system and its purpose, let’s implement it to
 
 To begin, let’s create a create a container for our grid with the following code:
 
-	<div class="container">
-	</div>
+```html
+<div class="container">
+</div>
+```
 
 Our container will hold all the rows and columns for our grid, so let’s create a row nested within our container, with the following line of code:
-
-	<div class="row">
-	</div>
-
+```html
+<div class="row">
+</div>
+```
 So now we have a row to work with within our container, so let’s create a column that contains an image of a nice little puppy, like this:
-
-	<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		<a class="thumbnail" href="#">
-			<img class="img-responsive" src="https://stiney98.files.wordpress.com/2011/05/cute-welsh-corgi-puppy-400x300.jpg?w=400" alt="">
-		</a>
-	</div>
-
+```html
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	<a class="thumbnail" href="#">
+		<img class="img-responsive" src="https://stiney98.files.wordpress.com/2011/05/cute-welsh-corgi-puppy-400x300.jpg?w=400" alt="">
+	</a>
+</div>
+```
 Some things to note about the above code:
 The line 
-	
-	<div class="col-lg-3 col-md-4 col-xs-6 thumb>
-
+```html	
+<div class="col-lg-3 col-md-4 col-xs-6 thumb>
+```
 
 creates a column that takes up 3 blocks on a large screen, 4 blocks on a medium screen, and 6 blocks on a small screen. As you know, the bootstrap grid is made up of 12 total blocks, so this line determines what fraction of the screen you are working with.
 The code following that is to use an image that links to nothing, you can simply copy that format if you would like to use images from the web!
  
 __NOTE:__ 
 
-	“href="#"” 
+	href="#"
+
 means that clicking your images links to nothing. Try and focus on the grid!
 
 Now that you know how to create a container, row, and column, try and add three extra rows of a varied number of columns to create a grid of images and text that demonstrates the power of the bootstrap grid for clean web design.
