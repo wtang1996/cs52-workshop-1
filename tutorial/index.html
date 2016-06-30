@@ -1,0 +1,271 @@
+<!-- template taken from http://startbootstrap.com/template-overviews/scrolling-nav/
+and then heavily modified -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your own title! -->
+    <title>Workshop 1 Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Workshop 1 Template</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#grids">Grids</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#buttons">Buttons</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#transitions">Transitions</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#media-queries">Media Queries</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#glyphicons">Glyphicons</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#input">Input</a>
+                    </li>
+
+                    <!-- Insert your own custom section link HERE -->
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Workshop 1</h1>
+                    <p><strong>Usage Instructions:</strong> Fill in the following HTML/CSS template such that you get the desired output based on the tutorial markdown file.</p>
+                    <a class="btn btn-default page-scroll" href="#grids">Let's begin!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grids Section -->
+    <section id="grids" class="grid-section">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1>Grid Section</h1>
+              </div>
+          </div>
+          <!-- Using a row format and columns broken into fourths to create
+              a grid of thumbnails and text-->
+          <div class="row">
+
+              <!-- Image of a puppy -->
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#">
+                      <img class="img-responsive" src="https://stiney98.files.wordpress.com/2011/05/cute-welsh-corgi-puppy-400x300.jpg?w=400" alt="">
+                  </a>
+              </div>
+
+              <!-- YOUR CODE HERE TO ADD MORE IMAGES OR TEXT TO THIS ROW -->
+          </div>
+
+          <!-- YOUR CODE HERE TO ADD MORE ROWS WITH MORE COLUMNS -->
+        </div>
+
+        <!-- YOUR CODE HERE IF YOU WANT TO MAKE A NEW GRID WITH A NEW CONTAINER
+        FOR FUN -->
+    </section>
+
+    <!-- Buttons Section -->
+    <section id="buttons" class="buttons-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  <h1>Fun with Buttons!</h1>
+                  <br>
+
+                  <!-- YOUR CODE HERE TO ADD IN BASIC BUTTONS -->
+
+                </div>
+
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                  <!-- YOUR CODE HERE TO ADD IN BLOCK DANGER BUTTON -->
+
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                  <!-- YOUR CODE HERE TO ADD IN BASIC BUTTON GROUP -->
+
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                  <!-- YOUR CODE HERE TO ADD IN DROPDOWN BUTTON MENU -->
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Transitions Section -->
+    <!-- All your work for this section will be done in css/main.css -->
+    <section id="transitions" class="transitions-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Transitions and Animation Section</h1>
+                </div>
+                <div class="col-lg-6">
+                    <div id="transition"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="animation"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Queries Section -->
+    <section id="media-queries" class="media-queries-section">
+        <div class="container">
+          <style>
+          /* PUT YOUR MEDIA QUERIES CSS HERE */
+          </style>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- NOTE: Bootstrap has a grid and media queries built in for collapsing the grid items for different sized screens,
+                    but you will use them for modifying other css properties below. Try imlementing the grid system for extra practice!-->
+                    <h1>Media Queries Section</h1>
+                      <div class="row" id="row1">
+                          <!-- PUT THREE COLUMNS HERE WITH ANY CONTENT YOU WISH. Make sure the columns adjust based on screen size as demonstrated.
+                          Change any property of the CSS on this section (i.e. text color) based on screen size -->
+                      </div>
+                      <div class="row" id="row2">
+                          <!-- PUT AN IMAGE HERE AND MAKE IT CHANGE DEPENDING ON SCREEN SIZE AND/OR SCREEN ORIENTATION -->
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glyphicons Section -->
+    <section id="glyphicons" class="glyphicons-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Glyphicons Section</h1>
+                    <!-- a plain glyphicon -->
+                    <p>Plain icon:
+                    <!-- put your icon here! -->
+                    </p>
+
+                    <!-- glyphicon as a link -->
+                    <p>Download link:
+                      <!-- put your icon as a link here! -->
+                    </p>
+
+                    <!-- glyphicons as buttons -->
+                    <p>Pause button:
+                      <!-- put your pause icon as a button here! -->
+                      Play button:
+                      <!-- put your play icon as a button here! -->
+                    </p>
+
+                    <!-- glyphicons with transition -->
+                    <p>"Beating" heart (hover):
+                      <!-- put your heart icon here! -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Input Section -->
+    <section id="input" class="input-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Input Section</h1>
+                    <br>
+                </div>
+
+                <!-- input group addons -->
+                <div class="input-group">
+                  <span class="input-group-addon">www.</span>
+                  <input type="text" class="form-control" placeholder="website">
+                  <!-- put your after addon here! -->
+                </div>
+
+                <br>
+                <!-- input group buttons -->
+                <!-- make your input group with a search button here! -->
+
+            </div>
+
+            <br>
+            <!-- input group radio and checkbox -->
+            <div class="row">
+              <!-- make your two-column grid here! -->
+                <!-- then make your input groups with a radio button and a checkbox! -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Insert your own custom section block HERE (make sure it has a matching ID to your link in the navbar)-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+</body>
+</html>
