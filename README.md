@@ -13,7 +13,7 @@ Now, you have a copy of your repository in your own github account.
 
 Switch to the `gh-pages` branch so that you will be able to see your page update as you complete the tutorial. Clone the repository in the command line and make sure you are on the `gh-pages` branch (run the command `git branch` to see what branch you're on, and if you're not on `gh-pages`, run `git checkout gh-pages`).
 
-Note the directory structure: you'll be working with the files in `tutorial/`, which contains a template `index.html` and `main.css` for you to modify where we have marked with comments. Our example code is in the directory `example/`, so you can see a possible solution. 
+Note the directory structure: you'll be working with the files in `tutorial/`, which contains a template `index.html` and `main.css` for you to modify where we have marked with comments. Our example code is in the directory `example/`, which is a possible end product to this tutorial. 
 
 Now you're ready to start modifying files!
 
@@ -195,7 +195,7 @@ Media queries are used in Bootstrap to make the columns you created above change
 ```
 Use "not" or "only" depending on whether you'd like to apply the styling when the stated condition exists, or when it does not exist.
 
-The mediatype is the first major component of the media query. It is the first condition that must be met (or not met if using not). It can take on any of 4 parameters. you can use "print" to have content display differently when being printed, "screen" for when it is being displayed on screen, "speech" for when a screenreader is reading the page out loud to, say a disabled person, or "all" meaning all of the above. There are also many deprecated types that we will not discuss here.
+The mediatype is the first major component of the media query. It is the first condition that must be met (or not met if using not). It can take on any of 4 parameters. You can use "print" to have content display differently when being printed, "screen" for when it is being displayed on screen, "speech" for when a screenreader is reading the page out loud to, say a disabled person, or "all" meaning all of the above. There are also many deprecated types that we will not discuss here.
 
 The media feature is the other major part of the media query, the second condition that must be met. You can continue to concatenate more media features using that and statement can take be any of the following:
 
@@ -232,7 +232,7 @@ These icons are a bit small though, aren’t they? Luckily, we can manipulate th
 
 Now let’s place a star glyphicon in the nav bar next to the “Glyphicons” section. See how that looks on the page.
 
-Uh oh! That’s a bit too big to be in the nav bar. To fix this, we want to change the size of just the star icon. Luckily, we can do so by addressing its specific class (`.glyphicon.glyphicon-NAME`). Go to `main.css` and add a section to return the star glyphicon to its default size. 
+Uh oh! That’s a bit too big to be in the nav bar. To fix this, we want to change the size of just the star icon. Luckily, we can do so by addressing its specific class (`.glyphicon.glyphicon-NAME`). Go to `main.css` and add a section to return the star glyphicon to its default size, while other icons remain larger. 
 
 Finally, let’s combine glyphicons with css transitions to make a “beating” heart. Find the heart icon, add it to your page. Use css transitions to have it gradually grow to a larger size when the cursor hovers over it, and then gradually back to its original size when the cursor moves off of it. 
 
@@ -247,7 +247,7 @@ Glyphicons are just one of many additional components and cool features that boo
 ---
 ###Section 6: Input Groups
 
-Bootstrap provides further customization options on inputs through input groups. This allows you to group inputs, text, buttons, etc. together simply and elegantly. These features are just another bit of customization provided by Bootstrap to make things easier for the coder. 
+Bootstrap provides further customization options on inputs through input groups. This allows you to group inputs, text, buttons, etc. together simply and elegantly. These features are just another bit of customization provided by bootstrap to make things easier for the coder. 
 
 To begin, create an input group class:
 `<div class="input-group">
@@ -256,19 +256,21 @@ To begin, create an input group class:
 Then, we create a text-box input:
 `<input type="text" class="form-control" placeholder=“default text here”>`
 
-Now, to add to this input group, we use the class `input-group-addon` inside a `<span>` class. 
+Now, to add to this input group, we use the class `input-group-addon` inside a `<span>`:
+ 
 `<span class="input-group-addon”>TEXT</span>`
+
 This addon will appear before or after the input box depending on its position.
 
-To test this out, let’s make an input group for a URL. In the Input Group Section of the template, there is already an input box beginning with “www.” So your job is simply to add “.com” at the end.
+To test this out, let’s make an input group for text representing a URL. In the Input Group Section of the html template, there is already an input box beginning with “www.” So your job is simply to add “.com” at the end.
 
 Your result should look similar to this: 
 
 ![alt text](images/website.png)
 
-Input groups may also have a button addon. Rather than class `input-group-addon`, the class for buttons is `input-group-bttn`. So let’s combine input groups with what we’ve learned before to create a search bar. In other words, make an input group with a search button glyphicon after the text input box.
+Input groups may also have a button addon. Rather than the class `input-group-addon`, the class for buttons is `input-group-bttn`. So let’s combine input groups with what we’ve learned before to create a search bar. In other words, make an input group with a search button glyphicon after the text input box.
 
-Your result should look similar to this: 
+If necessary, adjust the size of the search icon. Your result should look similar to this: 
 
 ![alt text](images/search.png)
 
@@ -310,4 +312,4 @@ The ‘page-scroll’ class is for use with ‘scrollspy’, the Bootstrap plugi
 
 This section has an id of ‘custom’, matching the link so that the link will actually function, and has a class ‘custom-section’, which can be separately styled in ‘main.css’.  To match, add a section with a min-height of 100%, a top padding of 60px, centrally aligned text, and a background color of either #fff or #eee depending on where you’re inserting the section.
 
-Now it will work!  Feel free to add custom styles to your section, and add whatever you want from the previous sections into this one.
+Now it will work!  Feel free to add custom styles to your section, and add whatever you want from the previous sections into this one. If you're feeling particularly ambitious, you can even research and add another cool component of bootstrap that was not discussed here. 
