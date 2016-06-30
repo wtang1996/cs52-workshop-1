@@ -7,13 +7,13 @@
 
 To set up for the tutorial, fork this repository by clicking the "fork" button in the upper right corner of the page:
 
-![alt text](fork_button.png)
+![alt text](images/fork_button.png)
 
 Now, you have a copy of your repository in your own github account.
 
 Switch to the `gh-pages` branch so that you will be able to see your page update as you complete the tutorial. Clone the repository in the command line and make sure you are on the `gh-pages` branch (run the command `git branch` to see what branch you're on, and if you're not on `gh-pages`, run `git checkout gh-pages`).
 
-Note the directory structure: you'll be working with the files in `tutorial/`. Our example code is in the directory `example/`.
+Note the directory structure: you'll be working with the files in `tutorial/`, which contains a template `index.html` and `main.css` for you to modify where we have marked with comments. Our example code is in the directory `example/`, so you can see a possible solution. 
 
 Now you're ready to start modifying files!
 
@@ -199,7 +199,7 @@ The mediatype is the first major component of the media query. It is the first c
 
 The media feature is the other major part of the media query, the second condition that must be met. You can continue to concatenate more media features using that and statement can take be any of the following:
 
-![mediafeatures](mediafeatures.png)
+![mediafeatures](images/mediafeatures.png)
 via [W3 Schools](http://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 
 Using the HTML template, set up a three column grid in the media queries section with any content you would like. You may use columns of different sizes, but make sure that the sum of your bootstrap columns is 12! Use the first row ```(id="row1")``` for this grid.
@@ -216,14 +216,15 @@ Next, as a challenge, you are going to change an image based on the size of the 
 ---
 ###Section 5: Glyphicons
 
-Bootstrap comes with over 250 [glyphicons](http://glyphicons.com/). These are monochromatic icons and symbols intended for simplicity and ease of use. They are easily incorporated into text, buttons, forms, etc.
+Bootstrap comes with over 250 [glyphicons](http://glyphicons.com/), one of many cool features built into Bootstrap. These are monochromatic icons and symbols intended for simplicity and ease of use. Rather than using an image, these icons are incredibly robust and flexible. They are easily incorporated into text, buttons, forms, etc.
 
 Glyphicons are inserted using code in the following format:
 `<span class="glyphicon glyphicon-NAME"></span>`
 
 Go to [this link](http://getbootstrap.com/components/) to see a list of available icons under the Glyphicons section. Select one you like, use its appropriate name, and insert it into your page. 
 
-To make something more interesting, let’s create a button that is a link. Find the glyphicon that looks like a download link and add it to your page as a link (This does not need to actually link anywhere).
+To make something more interesting, let’s create a button that is a link. Find the glyphicon that looks like a download link and add it to your page as a link (This does not need to actually link anywhere). Remember that a link is created with the code: 
+`<a href="#"></a>`
 
 Now, combine your knowledge of buttons with glyphicons to create a button with an icon on it. Specifically, try to create a “play button” and “pause button” (They do not need to actually do anything). 
 
@@ -237,14 +238,56 @@ Finally, let’s combine glyphicons with css transitions to make a “beating”
 
 Your end product should look similar to: 
 
-![alt text](glyphicons.png)
+![alt text](images/glyphicons.png)
 
 Perfect! You have now experienced how easy it is to spice up bootstrap pages with glyphicons. 
 
 Glyphicons are just one of many additional components and cool features that bootstrap implements for ease of use. Check out the rest of [http://getbootstrap.com/components/](http://getbootstrap.com/components/) to see what else is available.
 
 ---
-###Section 6: Adding your own section
+###Section 6: Input Groups
+
+Bootstrap provides further customization options on inputs through input groups. This allows you to group inputs, text, buttons, etc. together simply and elegantly. These features are just another bit of customization provided by Bootstrap to make things easier for the coder. 
+
+To begin, create an input group class:
+`<div class="input-group">
+</div>`
+
+Then, we create a text-box input:
+`<input type="text" class="form-control" placeholder=“default text here”>`
+
+Now, to add to this input group, we use the class `input-group-addon` inside a `<span>` class. 
+`<span class="input-group-addon”>TEXT</span>`
+This addon will appear before or after the input box depending on its position.
+
+To test this out, let’s make an input group for a URL. In the Input Group Section of the template, there is already an input box beginning with “www.” So your job is simply to add “.com” at the end.
+
+Your result should look similar to this: 
+
+![alt text](images/website.png)
+
+Input groups may also have a button addon. Rather than class `input-group-addon`, the class for buttons is `input-group-bttn`. So let’s combine input groups with what we’ve learned before to create a search bar. In other words, make an input group with a search button glyphicon after the text input box.
+
+Your result should look similar to this: 
+
+![alt text](images/search.png)
+
+Furthermore, input groups may also be combined with checkboxes and radio buttons. Both are treated as the `input-group-addon` class.
+
+The code for a radio button: `<input type="radio">`
+
+The code for a checkbox: `<input type="checkbox">`
+
+Now, combine input groups with the grid system by making a row with two columns. Have one column be the input group with a radio button, and the other be the input group with a checkbox.
+
+Your result should look similar to this: 
+
+![alt text](images/checkradio.png)
+
+You have now experienced how bootstrap provides further customization to simple structures such as inputs. Check out the rest of [http://getbootstrap.com/components/](http://getbootstrap.com/components/) to see what else is available. 
+
+---
+###Section 7: Adding your own section
 
 Bootstrap makes it easy to create navbars.  There's already a navbar set up, but let's create a new section to the navbar, after the Input Section.
 
