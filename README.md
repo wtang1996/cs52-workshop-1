@@ -200,6 +200,7 @@ The mediatype is the first major component of the media query. It is the first c
 The media feature is the other major part of the media query, the second condition that must be met. You can continue to concatenate more media features using that and statement can take be any of the following:
 
 ![mediafeatures](mediafeatures.png)
+via [W3 Schools](http://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 
 Using the HTML template, set up a three column grid in the media queries section with any content you would like. You may use columns of different sizes, but make sure that the sum of your bootstrap columns is 12! Use the first row ```(id="row1")``` for this grid.
 
