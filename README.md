@@ -185,6 +185,33 @@ Note: guidance taken from [w3schools](http://www.w3schools.com/cssref/) CSS and 
 ---
 ###Section 4: Media Queries
 
+Media queries are used in Bootstrap to make the columns you created above change positions on the screen depending on the screen size. They can be used not just for this purpose, but to modify any CSS property of an element on the page. You can implement a media query using the following syntax:
+
+```css
+@media not|only mediatype and (media feature) {
+    /* Standard css code goes here and will be applied 
+    when the condition is met. */
+}
+```
+Use "not" or "only" depending on whether you'd like to apply the styling when the stated condition exists, or when it does not exist.
+
+The mediatype is the first major component of the media query. It is the first condition that must be met (or not met if using not). It can take on any of 4 parameters. you can use "print" to have content display differently when being printed, "screen" for when it is being displayed on screen, "speech" for when a screenreader is reading the page out loud to, say a disabled person, or "all" meaning all of the above. There are also many deprecated types that we will not discuss here.
+
+The media feature is the other major part of the media query, the second condition that must be met. You can continue to concatenate more media features using that and statement can take be any of the following:
+
+![mediafeatures](mediafeatures.png)
+
+Using the HTML template, set up a three column grid in the media queries section with any content you would like. You may use columns of different sizes, but make sure that the sum of your bootstrap columns is 12! Use the first row ```(id="row1")``` for this grid.
+
+Now add a media query in the style tags above that will modify any one or multiple css properties that you wish, given a condition set from the lists above. It will probably be easiest to do so with mediatype "screen" and media feature ```max-width``` or ```min-width``` as these are the easiest to test quickly in the browser in my experience.
+
+Good coding practice is to build for mobile first, meaning your default css should be for as it will look good on all screen sizes, and your media query should alter it for the larger screen sizes. If you are using ```min-width```, you built for desktop first. Good coding practice dictates that you should use ```max-wdth``` instead, reversing your default and media queried CSS. Go ahead and make this change, if neccessary, now.
+
+Try adjusting the size of your window (or whatever property you chose to play with now, and check to make sure the media query is working.
+
+Next, as a challenge, you are going to change an image based on the size of the window. In our example, we changed the image from a MacBook to a Smartphone based on the screen size. Without looking at the example code, try to think about how you would do this using just a media query and CSS. Look at a list of CSS properties [here](http://www.pageresource.com/dhtml/cssprops.htm) and try to find one you can use to do this. You will also need to use some HTML tags in your code to apply the CSS styles to.
+
+
 ---
 ###Section 5: Glyphicons
 
