@@ -100,19 +100,31 @@ of those sections to manage the look and feel of the site. */
 
 #transition {
   /* put style here */
+  color: black;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in;
 }
 
 #transition:hover {
   /* what do you want the transition to do? */
+  color: red;
+
 }
 
 #animation {
   /* put "initial" style of animation here */
+  color: red;
+  width: 80%;
   animation-name: keyanimate;
+  animation-duration: 2s;
 }
 
 @keyframes keyanimate {
   /* What do you want your animation to do? */
+  0% {background-color:blue}
+  50% {background-color:purple}
+  100% {background-color:green}
 }
 
 /*************************************************/
